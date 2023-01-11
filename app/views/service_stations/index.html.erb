@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row align-center">
+    <% @service_stations.each do |service_station| %>
+      <%= render 'service_station', service_station: service_station  %>
+    <% end %>
+  </div>
+</div>

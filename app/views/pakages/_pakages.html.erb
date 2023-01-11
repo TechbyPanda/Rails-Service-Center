@@ -1,0 +1,7 @@
+<div class="card m-4 border-0 shadow-sm" style="width: 18rem;">
+  <%= image_tag pakage.pakage_image, class: 'card-img-top' if pakage.pakage_image.persisted? %>
+  <div class="card-body">
+    <span class="text-uppercase"><%= pakage.name %></span>
+    <span class="float-end">Price: ₹<%= pakage.price%></span>
+  </div>
+</div>

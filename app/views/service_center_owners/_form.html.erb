@@ -1,0 +1,49 @@
+<div class="container bg-ligh mt-4 p-5">
+	<div class="card shadow-sm">
+		<%= form_with(model: @service_center_owner, local: true, class: "p-3") do |f| %>
+			<div class="container">
+				<div class="row">
+					<div class="mb-3 col-12">
+						<%= f.label :name, "Enter Your Name", class: "from-label" %>
+						<%= f.text_field :name, class: "form-control", id: "floatingInput" %>
+					</div>
+					<div class="mb-3 col-lg-12">
+					  	<%= f.label :address, "Enter Your Address", class: "from-label" %>
+						<%= f.text_field :address, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-4">
+					  	<%= f.label :state, "Enter Your State", class: "from-label" %>
+						<%= f.text_field :state, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-4">
+					  	<%= f.label :city, "Enter Your City", class: "from-label" %>
+						<%= f.text_field :city, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-4">
+					  	<%= f.label :country, "Enter Your Country", class: "from-label" %>
+						<%= f.text_field :country, class: "form-control" %>
+					</div>
+					<div class="mb-3">
+					  	<%= f.label :description, "Enter Your Description", class: "from-label" %>
+						<%= f.text_area :description, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-4">
+					  	<%= f.label :gender, "Enter Your Gender", class: "from-label" %>
+						<%= f.text_field :gender, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-4">
+					  	<%= f.label :mobile, "Enter Your Mobile", class: "from-label" %>
+						<%= f.text_field :mobile, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-4">
+					  	<%= f.label :occupation, "Enter Your Occupation", class: "from-label" %>
+						<%= f.text_field :Occupation, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-12">
+					  	<%= f.submit  class: "btn btn-info" %>
+					</div>
+				</div>
+			</div>
+		<%end%>
+	</div>
+</div>

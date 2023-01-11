@@ -1,0 +1,29 @@
+<div class="container bg-ligh mt-4 p-5">
+	<div class="card shadow-sm">
+		<%= form_with(model: @pakage,url: service_station_pakages_path, local: true, class: "p-3") do |f| %>
+			<div class="container">
+				<div class="row">
+					<div class="mb-3 col-12">
+						<%= f.label :name, "Enter Service Center Name", class: "from-label" %>
+						<%= f.text_field :name, class: "form-control", id: "floatingInput" %>
+					</div>
+					<div class="mb-3 col-lg-4">
+					  	<%= f.label :price, "Enter Your Service Station Mobile", class: "from-label" %>
+						<%= f.text_field :price, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-4">
+					  <%= f.label :pakage_image, "Select Image", class: "from-label" %>
+						<%= f.file_field :pakage_image, class: "form-control" %>
+					</div>
+					<div class="mb-3">
+					  <%= f.label :description, "Enter Your Description", class: "from-label" %>
+						<%= f.text_area :description, class: "form-control" %>
+					</div>
+					<div class="mb-3 col-lg-12">
+					  	<%= f.submit  class: "btn btn-info" %>
+					</div>
+				</div>
+			</div>
+		<%end%>
+	</div>
+</div>

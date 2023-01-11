@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6 p-4">
+      <div class="card shadow-sm p-2">
+        <h2 class="text-center"><%= @service_station.name%></h2>
+        <hr>
+        <p> Address :- <%= @service_station.works %> </p>
+        <p> Mobile :- <%= @service_station.mobile %></p>
+        <p> Occupation :- <%= @service_station.location %> </p>
+        <p> Description :- <%= @service_station.description %></p>
+        <div>
+          <%= link_to "Edit", edit_service_station_path(@service_station.id), class:"btn btn-primary btn-sm"%>
+          <%= link_to "Create Package", new_service_station_pakage_path(service_station.id), class:"btn btn-info btn-sm"%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
